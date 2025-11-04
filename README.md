@@ -1,45 +1,47 @@
 # Mosque-Abbas-Bhagwal
 Mosque Abbas in Bhagwal, Kharian Tehsil, Gujrat District, Punjab, Pakistan
-# Quran Majeed with urdu Translation  🌙 قرآن مجید مع اردو ترجمہ  
+# 🌙 قرآن مجید مع اردو ترجمہ -Quran Majeed with Urdu Translation
 
-جس پارہ پر کلک کریں — وہ پارہ کھل جائے گا (دعوت اسلامی ویب سائٹ سے براہِ راست)
+جس پارہ پر کلک کریں — وہ پارہ سنیں اور ترجمہ دیکھیں۔ قرآن کے ہر لفظ پر **10 نیکیاں**!
 
 ---
 
 ## 📖 پارہ وار لنکس
 
-1. [پارہ 1](https://www.dawateislami.net/quran/kanzul-iman/1)
-2. [پارہ 2](https://www.dawateislami.net/quran/kanzul-iman/2)
-3. [پارہ 3](https://www.dawateislami.net/quran/kanzul-iman/3)
-4. [پارہ 4](https://www.dawateislami.net/quran/kanzul-iman/4)
-5. [پارہ 5](https://www.dawateislami.net/quran/kanzul-iman/5)
-6. [پارہ 6](https://www.dawateislami.net/quran/kanzul-iman/6)
-7. [پارہ 7](https://www.dawateislami.net/quran/kanzul-iman/7)
-8. [پارہ 8](https://www.dawateislami.net/quran/kanzul-iman/8)
-9. [پارہ 9](https://www.dawateislami.net/quran/kanzul-iman/9)
-10. [پارہ 10](https://www.dawateislami.net/quran/kanzul-iman/10)
-11. [پارہ 11](https://www.dawateislami.net/quran/kanzul-iman/11)
-12. [پارہ 12](https://www.dawateislami.net/quran/kanzul-iman/12)
-13. [پارہ 13](https://www.dawateislami.net/quran/kanzul-iman/13)
-14. [پارہ 14](https://www.dawateislami.net/quran/kanzul-iman/14)
-15. [پارہ 15](https://www.dawateislami.net/quran/kanzul-iman/15)
-16. [پارہ 16](https://www.dawateislami.net/quran/kanzul-iman/16)
-17. [پارہ 17](https://www.dawateislami.net/quran/kanzul-iman/17)
-18. [پارہ 18](https://www.dawateislami.net/quran/kanzul-iman/18)
-19. [پارہ 19](https://www.dawateislami.net/quran/kanzul-iman/19)
-20. [پارہ 20](https://www.dawateislami.net/quran/kanzul-iman/20)
-21. [پارہ 21](https://www.dawateislami.net/quran/kanzul-iman/21)
-22. [پارہ 22](https://www.dawateislami.net/quran/kanzul-iman/22)
-23. [پارہ 23](https://www.dawateislami.net/quran/kanzul-iman/23)
-24. [پارہ 24](https://www.dawateislami.net/quran/kanzul-iman/24)
-25. [پارہ 25](https://www.dawateislami.net/quran/kanzul-iman/25)
-26. [پارہ 26](https://www.dawateislami.net/quran/kanzul-iman/26)
-27. [پارہ 27](https://www.dawateislami.net/quran/kanzul-iman/27)
-28. [پارہ 28](https://www.dawateislami.net/quran/kanzul-iman/28)
-29. [پارہ 29](https://www.dawateislami.net/quran/kanzul-iman/29)
-30. [پارہ 30](https://www.dawateislami.net/quran/kanzul-iman/30)
+- [پارہ 1](http://bit.ly/2qpLHGY)  
+- [پارہ 2](http://bit.ly/2qnS2Ha)  
+- [پارہ 3](http://bit.ly/2sbSqoq)  
+- [پارہ 4](http://bit.ly/2r6TOeq)  
+- [پارہ 5](http://bit.ly/2qzzsYk)  
+- [پارہ 6](http://bit.ly/2qI4EE2)  
+- [پارہ 7](http://bit.ly/2rW88HS)  
+- [پارہ 8](http://bit.ly/2qK0aO4)  
+- [پارہ 9](http://bit.ly/2rBqzB0)  
+- [پارہ 10](http://bit.ly/2s3dkdd)  
+- [پارہ 11](http://bit.ly/2so5po5)  
+- [پارہ 12](http://bit.ly/2rzgVP9)  
+- [پارہ 13](http://bit.ly/2rSIJ1l)  
+- [پارہ 14](http://bit.ly/2sk5Lid)  
+- [پارہ 15](http://bit.ly/2rKJHw3)  
+- [پارہ 16](http://bit.ly/2sMTr7y)  
+- [پارہ 17](http://bit.ly/2r9opp2)  
+- [پارہ 18](http://bit.ly/2rpK4c8)  
+- [پارہ 19](http://bit.ly/2rpq1iW)  
+- [پارہ 20](http://bit.ly/2rAX4Mc)  
+- [پارہ 21](http://bit.ly/2rBv2Aa)  
+- [پارہ 22](http://bit.ly/2sbmkft)  
+- [پارہ 23](http://bit.ly/2rtPXpH)  
+- [پارہ 24](http://bit.ly/2sfUCOE)  
+- [پارہ 25](http://bit.ly/2smfZxF)  
+- [پارہ 26](http://bit.ly/2tLUEvC)  
+- [پارہ 27](http://bit.ly/2tru5wz)  
+- [پارہ 28](http://bit.ly/2rXeW98)  
+- [پارہ 29](http://bit.ly/2s5NLEk)  
+- [پارہ 30](http://bit.ly/2s1BBB4)  
 
 ---
 
 💌 صدقہ جاریہ سمجھ کر دوسروں تک بھی شئیر کریں  
 📍 Bhagwal, Kharian, Gujrat, Punjab, Pakistan
+ 
+
