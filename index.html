@@ -612,7 +612,7 @@
             </div>
 
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10355.185569174982!2d73.94385653775217!3d32.82472371001921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fa7ae7b55d8cf%3A0xaa460a643cdf0e9!2sMosque%20Abbas%20Bhagwal!5e1!3m2!1sen!2sae!4v1793629881224!5m2!1sen!2sae"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10355.185569174982!2d73.94385653775217!3d32.82472371001921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fa7ae7b5d8e7c%3A0x9c0d4d4a9d8d4d4a!2sMosque%20Abbas%20Bhagwal!5e0!3m2!1sen!2s!4v1670000000000!5m2!1sen!2s"
               width="600"
               height="450"
               style="border:0;"
@@ -721,7 +721,17 @@
         statusEl.textContent = 'Azan playing now. Please keep the page open if you want the live reminder to continue.';
       });
 
+      function formatPrayerTime(value) {
+        if (!value || value === '--:--') return '--:--';
+
+        const [hour, minute] = value.split(':').map(Number);
+        const suffix = hour >= 12 ? 'PM' : 'AM';
+        const hour12 = ((hour + 11) % 12) + 1;
+        return `${hour12}:${String(minute).padStart(2, '0')} ${suffix}`;
+      }
+
       function toMinutes(timeString) {
+        if (!timeString || timeString === '--:--') return null;
         const [hour, minute] = timeString.split(':').map(Number);
         return hour * 60 + minute;
       }
@@ -737,17 +747,24 @@
 
       async function loadPrayerTimes() {
         try {
-          const response = await fetch('https://api.aladhan.com/v1/timingsByCity?city=Gujrat&country=Pakistan&method=2');
+          const today = new Date();
+          const dateString = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+          const response = await fetch(`https://api.aladhan.com/v1/timingsByCity/${dateString}?city=Gujrat&country=Pakistan&method=2`);
+
+          if (!response.ok) {
+            throw new Error(`Prayer API responded with ${response.status}`);
+          }
+
           const data = await response.json();
           const timings = data?.data?.timings || {};
 
-          document.getElementById('fajrTime').textContent = timings.Fajr || '--:--';
-          document.getElementById('dhuhrTime').textContent = timings.Dhuhr || '--:--';
-          document.getElementById('asrTime').textContent = timings.Asr || '--:--';
-          document.getElementById('maghribTime').textContent = timings.Maghrib || '--:--';
-          document.getElementById('ishaTime').textContent = timings.Isha || '--:--';
+          document.getElementById('fajrTime').textContent = formatPrayerTime(timings.Fajr || '--:--');
+          document.getElementById('dhuhrTime').textContent = formatPrayerTime(timings.Dhuhr || '--:--');
+          document.getElementById('asrTime').textContent = formatPrayerTime(timings.Asr || '--:--');
+          document.getElementById('maghribTime').textContent = formatPrayerTime(timings.Maghrib || '--:--');
+          document.getElementById('ishaTime').textContent = formatPrayerTime(timings.Isha || '--:--');
 
-          statusEl.textContent = 'Pakistan prayer times are active for Gujrat, Punjab.';
+          statusEl.textContent = `Gujrat, Punjab prayer times are updated automatically for ${new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}.`;
 
           const alerted = {};
 
@@ -763,7 +780,10 @@
 
               if (!prayerTime) return;
 
-              if (!alerted[key] && Math.abs(currentMinutes - toMinutes(prayerTime)) <= 1) {
+              const prayerMinutes = toMinutes(prayerTime);
+              if (prayerMinutes === null) return;
+
+              if (!alerted[key] && Math.abs(currentMinutes - prayerMinutes) <= 1) {
                 alerted[key] = true;
                 playAzanAlert();
                 statusEl.textContent = `${prayerName} prayer time reminder has started in Pakistan time.`;
@@ -773,6 +793,7 @@
 
           checkPrayerAlert();
           setInterval(checkPrayerAlert, 30000);
+          setInterval(loadPrayerTimes, 60 * 60 * 1000);
         } catch (error) {
           statusEl.textContent = 'Prayer times could not be loaded right now. Please refresh the page or use the manual Azan button.';
           console.error('Prayer time fetch failed:', error);
