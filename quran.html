@@ -1,96 +1,227 @@
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>قرآن مجید مع اردو ترجمہ - Bhagwal</title>
-  <style>
-    body {
-      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
-      background: #f8f9fa;
-      color: #222;
-      text-align: center;
-      padding: 20px;
-      direction: rtl;
-    }
-    h1 {
-      color: #006400;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.8;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 10px;
-      margin-top: 25px;
-    }
-    a {
-      display: block;
-      background: #ffffff;
-      border: 1px solid #ddd;
-      padding: 10px;
-      border-radius: 12px;
-      text-decoration: none;
-      color: #006400;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    a:hover {
-      background: #e8f5e9;
-      transform: scale(1.05);
-    }
-    footer {
-      margin-top: 30px;
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>قرآن مجید مع اردو ترجمہ - Mosque Abbas</title>
+    <style>
+      :root {
+        --green-900: #0d3b2d;
+        --green-700: #1f6d4d;
+        --green-600: #2c8f68;
+        --cream: #f8f1e7;
+        --white: #ffffff;
+        --text: #1e293b;
+        --muted: #53657a;
+      }
 
-  <h1>🌙 قرآن مجید مع اردو ترجمہ</h1>
-  <p>صرف ایک کلک سے پارہ سنیں — قرآن کے ہر لفظ پر <strong>10 نیکیاں</strong>!</p>
+      * { box-sizing: border-box; }
 
-  <div class="grid">
-    <a href="http://bit.ly/2qpLHGY" target="_blank">پارہ 1</a>
-    <a href="http://bit.ly/2qnS2Ha" target="_blank">پارہ 2</a>
-    <a href="http://bit.ly/2sbSqoq" target="_blank">پارہ 3</a>
-    <a href="http://bit.ly/2r6TOeq" target="_blank">پارہ 4</a>
-    <a href="http://bit.ly/2qzzsYk" target="_blank">پارہ 5</a>
-    <a href="http://bit.ly/2qI4EE2" target="_blank">پارہ 6</a>
-    <a href="http://bit.ly/2rW88HS" target="_blank">پارہ 7</a>
-    <a href="http://bit.ly/2qK0aO4" target="_blank">پارہ 8</a>
-    <a href="http://bit.ly/2rBqzB0" target="_blank">پارہ 9</a>
-    <a href="http://bit.ly/2s3dkdd" target="_blank">پارہ 10</a>
-    <a href="http://bit.ly/2so5po5" target="_blank">پارہ 11</a>
-    <a href="http://bit.ly/2rzgVP9" target="_blank">پارہ 12</a>
-    <a href="http://bit.ly/2rSIJ1l" target="_blank">پارہ 13</a>
-    <a href="http://bit.ly/2sk5Lid" target="_blank">پارہ 14</a>
-    <a href="http://bit.ly/2rKJHw3" target="_blank">پارہ 15</a>
-    <a href="http://bit.ly/2sMTr7y" target="_blank">پارہ 16</a>
-    <a href="http://bit.ly/2r9opp2" target="_blank">پارہ 17</a>
-    <a href="http://bit.ly/2rpK4c8" target="_blank">پارہ 18</a>
-    <a href="http://bit.ly/2rpq1iW" target="_blank">پارہ 19</a>
-    <a href="http://bit.ly/2rAX4Mc" target="_blank">پارہ 20</a>
-    <a href="http://bit.ly/2rBv2Aa" target="_blank">پارہ 21</a>
-    <a href="http://bit.ly/2sbmkft" target="_blank">پارہ 22</a>
-    <a href="http://bit.ly/2rtPXpH" target="_blank">پارہ 23</a>
-    <a href="http://bit.ly/2sfUCOE" target="_blank">پارہ 24</a>
-    <a href="http://bit.ly/2smfZxF" target="_blank">پارہ 25</a>
-    <a href="http://bit.ly/2tLUEvC" target="_blank">پارہ 26</a>
-    <a href="http://bit.ly/2tru5wz" target="_blank">پارہ 27</a>
-    <a href="http://bit.ly/2rXeW98" target="_blank">پارہ 28</a>
-    <a href="http://bit.ly/2s5NLEk" target="_blank">پارہ 29</a>
-    <a href="http://bit.ly/2s1BBB4" target="_blank">پارہ 30</a>
-  </div>
+      body {
+        margin: 0;
+        font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+        background: linear-gradient(180deg, #f5f7f2 0%, #eef7f0 100%);
+        color: var(--text);
+        line-height: 1.9;
+      }
 
-  <footer>
-    💌 صدقہ جاریہ سمجھ کر دوسروں تک بھی شئیر کریں۔<br>
-    📍 Bhagwal, Kharian, Gujrat, Punjab, Pakistan
-  </footer>
+      a {
+        text-decoration: none;
+      }
 
-</body>
+      .container {
+        width: min(1100px, calc(100% - 28px));
+        margin: 0 auto;
+      }
+
+      .header {
+        background: linear-gradient(135deg, var(--green-900), var(--green-700));
+        color: var(--white);
+        padding: 18px 0;
+        box-shadow: 0 10px 28px rgba(13, 59, 45, 0.14);
+      }
+
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .nav a {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255,255,255,0.15);
+        color: var(--white);
+        border-radius: 999px;
+        padding: 8px 14px;
+        font-size: 0.95rem;
+      }
+
+      .nav a:hover {
+        background: rgba(255,255,255,0.16);
+      }
+
+      .main {
+        padding: 32px 0 40px;
+      }
+
+      .hero {
+        text-align: center;
+        background: rgba(255,255,255,0.7);
+        border: 1px solid rgba(31, 109, 77, 0.1);
+        border-radius: 24px;
+        box-shadow: 0 18px 45px rgba(13, 59, 45, 0.08);
+        padding: 28px 18px;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.3rem);
+        margin: 0 0 12px;
+        color: var(--green-900);
+      }
+
+      .subtitle {
+        font-size: 1.05rem;
+        color: var(--muted);
+        margin: 0 0 18px;
+      }
+
+      .cta {
+        display: inline-block;
+        margin: 8px 8px 0;
+        background: var(--green-700);
+        color: var(--white);
+        padding: 12px 18px;
+        border-radius: 999px;
+        font-weight: 700;
+      }
+
+      .cta.secondary {
+        background: var(--white);
+        color: var(--green-900);
+        border: 1px solid rgba(31, 109, 77, 0.14);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .part {
+        display: block;
+        background: var(--white);
+        border: 1px solid rgba(31, 109, 77, 0.1);
+        color: var(--green-900);
+        font-weight: 700;
+        border-radius: 18px;
+        padding: 16px 12px;
+        text-align: center;
+        box-shadow: 0 12px 22px rgba(13, 59, 45, 0.05);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .part:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 24px rgba(13, 59, 45, 0.08);
+        background: #edf9f1;
+      }
+
+      .footer-note {
+        margin-top: 28px;
+        padding: 18px 12px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      @media (max-width: 640px) {
+        .header-inner {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .nav {
+          width: 100%;
+        }
+
+        .nav a {
+          flex: 1 1 calc(50% - 10px);
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <div class="brand">قرآن مجید مع اردو ترجمہ</div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="https://jamaat360.com/pakistan-1/gujrat-76/bhagwal-4147/mosque-abbas-bhagwal-12173" target="_blank" rel="noreferrer">Reference</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="hero">
+          <h1>🌙 قرآن مجید مع اردو ترجمہ</h1>
+          <p class="subtitle">جس پارہ پر کلک کریں — قرآن کے ہر لفظ پر 10 نیکیاں!</p>
+          <a class="cta" href="#parts">پارہ سنیں</a>
+          <a class="cta secondary" href="index.html">مذہبی ویب سائٹ</a>
+        </section>
+
+        <div id="parts" class="grid" aria-label="Quran parts list">
+          <a class="part" href="http://bit.ly/2qpLHGY" target="_blank">پارہ 1</a>
+          <a class="part" href="http://bit.ly/2qnS2Ha" target="_blank">پارہ 2</a>
+          <a class="part" href="http://bit.ly/2sbSqoq" target="_blank">پارہ 3</a>
+          <a class="part" href="http://bit.ly/2r6TOeq" target="_blank">پارہ 4</a>
+          <a class="part" href="http://bit.ly/2qzzsYk" target="_blank">پارہ 5</a>
+          <a class="part" href="http://bit.ly/2qI4EE2" target="_blank">پارہ 6</a>
+          <a class="part" href="http://bit.ly/2rW88HS" target="_blank">پارہ 7</a>
+          <a class="part" href="http://bit.ly/2qK0aO4" target="_blank">پارہ 8</a>
+          <a class="part" href="http://bit.ly/2rBqzB0" target="_blank">پارہ 9</a>
+          <a class="part" href="http://bit.ly/2s3dkdd" target="_blank">پارہ 10</a>
+          <a class="part" href="http://bit.ly/2so5po5" target="_blank">پارہ 11</a>
+          <a class="part" href="http://bit.ly/2rzgVP9" target="_blank">پارہ 12</a>
+          <a class="part" href="http://bit.ly/2rSIJ1l" target="_blank">پارہ 13</a>
+          <a class="part" href="http://bit.ly/2sk5Lid" target="_blank">پارہ 14</a>
+          <a class="part" href="http://bit.ly/2rKJHw3" target="_blank">پارہ 15</a>
+          <a class="part" href="http://bit.ly/2sMTr7y" target="_blank">پارہ 16</a>
+          <a class="part" href="http://bit.ly/2r9opp2" target="_blank">پارہ 17</a>
+          <a class="part" href="http://bit.ly/2rpK4c8" target="_blank">پارہ 18</a>
+          <a class="part" href="http://bit.ly/2rpq1iW" target="_blank">پارہ 19</a>
+          <a class="part" href="http://bit.ly/2rAX4Mc" target="_blank">پارہ 20</a>
+          <a class="part" href="http://bit.ly/2rBv2Aa" target="_blank">پارہ 21</a>
+          <a class="part" href="http://bit.ly/2sbmkft" target="_blank">پارہ 22</a>
+          <a class="part" href="http://bit.ly/2rtPXpH" target="_blank">پارہ 23</a>
+          <a class="part" href="http://bit.ly/2sfUCOE" target="_blank">پارہ 24</a>
+          <a class="part" href="http://bit.ly/2smfZxF" target="_blank">پارہ 25</a>
+          <a class="part" href="http://bit.ly/2tLUEvC" target="_blank">پارہ 26</a>
+          <a class="part" href="http://bit.ly/2tru5wz" target="_blank">پارہ 27</a>
+          <a class="part" href="http://bit.ly/2rXeW98" target="_blank">پارہ 28</a>
+          <a class="part" href="http://bit.ly/2s5NLEk" target="_blank">پارہ 29</a>
+          <a class="part" href="http://bit.ly/2s1BBB4" target="_blank">پارہ 30</a>
+        </div>
+
+        <div class="footer-note">
+          💌 صدقہ جاریہ سمجھ کر دوسروں تک بھی شئیر کریں۔<br />
+          📍 Bhagwal, Kharian, Gujrat, Punjab, Pakistan
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

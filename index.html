@@ -1,155 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mosque Abbas رضی اللہ تعالٰی عنہ بھگوال</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: #2c3e50; color: #fff; text-align: center; padding: 1rem; }
-    nav { background: #34495e; padding: 0.5rem; text-align: center; display: flex; flex-wrap: wrap; justify-content: center; }
-    nav a { color: #fff; margin: 0.3rem 0.7rem; text-decoration: none; padding: 0.5rem 1rem; border-radius: 5px; background: #2c3e50; transition: background 0.3s; }
-    nav a:hover { background: #1abc9c; }
-    section { padding: 1.5rem; max-width: 900px; margin: auto; }
-    iframe { width: 100%; height: 350px; border: 0; border-radius: 8px; }
-    footer { background: #2c3e50; color: #fff; text-align: center; padding: 1rem; font-size: 0.9rem; }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.3rem; }
-      section { padding: 1rem; }
-      nav { flex-direction: column; }
-      nav a { display: block; width: 100%; margin: 0.2rem 0; }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Mosque Abbas – مسجد عباس رضی اللہ تعالٰی عنہ بھگوال</h1>
-    <p>Golra Hashim Road, Bhagwal, Kharian Tehsil, Gujrat District, Punjab, Pakistan</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#prayers">Prayer Times</a>
-    <a href="#location">Location</a>
-    <a href="#contact">Contact</a>
-    <a href="Quran.html">Complete Quran Audio</a>
-  </nav>
-
-  <section id="about">
-    <h2>About مسجد عباس رضی اللہ تعالٰی عنہ بھگوال</h2>
-    <p>This mosque serves as a center of worship, community gatherings, and Islamic education for the residents of Bhagwal and nearby villages.</p>
-  </section>
-
-  <section id="prayers">
-    <h2>Prayer Times</h2>
-    <ul>
-      <li>Fajr – 5:00 AM</li>
-      <li>Dhuhr – 1:00 PM</li>
-      <li>Asr – 4:30 PM</li>
-      <li>Maghrib – Sunset</li>
-      <li>Isha – 8:00 PM</li>
-      <li>Jumu'ah – 1:30 PM</li>
-    </ul>
-  </section>
-
-  <section id="location">
-    <h2>Location / مقام</h2>
-    <p>Golra Hashim Road, Bhagwal, Kharian Tehsil, Gujrat District, Punjab, Pakistan</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d915.2768284325829!2d73.95331123540234!3d32.82481237034591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fa7ae7b55d8cf%3A0xaa460a643cdf0e9!2zTW9zcXVlIEFiYmFzIEJoYWd3YWwgLSDZhdiz2KzYryDYudio2KfYsyDYsdi224wg2KfZhNmE24Eg2KrYudin2YTZsNuMINi52YbbgSDYqNq-2q_ZiNin2YQ!5e1!3m2!1sen!2sae!4v1759467405338!5m2!1sen!2sae" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Contact Person:</strong> Malik Amaan Ullah</p>
-    <p><strong>Mobile No:</strong> +92 315 4261140</p>
-  </section>
-<!DOCTYPE html>
-<html lang="ur" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>قرآن مجید مع اردو ترجمہ - Bhagwal</title>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mosque Abbas Bhagwal - a welcoming place of worship, prayer, and community in Bhagwal, Kharian, Gujrat, Punjab." 
+    />
+    <title>Mosque Abbas | مسجد عباس بھگوال</title>
     <style>
-        body {
-            font-family: "Noto Nastaliq Urdu", serif;
-            background: #f4f4f4;
-            padding: 20px;
-            line-height: 2;
+      :root {
+        --green-900: #0b3d2e;
+        --green-800: #14533d;
+        --green-700: #1d6b4f;
+        --green-500: #2d9c74;
+        --gold: #f6c76e;
+        --cream: #f7f5ee;
+        --text: #1f2937;
+        --muted: #5f6f7f;
+        --white: #ffffff;
+        --shadow: 0 18px 45px rgba(11, 61, 46, 0.12);
+      }
+
+      * { box-sizing: border-box; }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, #f9faf7 0%, #eef7f2 100%);
+        color: var(--text);
+        line-height: 1.7;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .container {
+        width: min(1100px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .topbar {
+        background: linear-gradient(135deg, var(--green-900), var(--green-800));
+        color: var(--white);
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        box-shadow: 0 10px 30px rgba(15, 41, 34, 0.18);
+      }
+
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 14px 0;
+      }
+
+      .brand {
+        font-size: 1.15rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .brand small {
+        display: block;
+        font-size: 0.7rem;
+        opacity: 0.9;
+        letter-spacing: 0.08em;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .nav a {
+        border: 1px solid rgba(255,255,255,0.15);
+        background: rgba(255,255,255,0.06);
+        border-radius: 999px;
+        padding: 8px 14px;
+        font-size: 0.95rem;
+        transition: 0.25s ease;
+      }
+
+      .nav a:hover {
+        background: rgba(255,255,255,0.15);
+        transform: translateY(-1px);
+      }
+
+      .hero {
+        padding: 56px 0 32px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.4fr 0.9fr;
+        gap: 28px;
+        align-items: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--green-700);
+        font-size: 0.8rem;
+      }
+
+      h1 {
+        margin: 0 0 14px;
+        font-size: clamp(2.2rem, 4vw, 4rem);
+        line-height: 1.15;
+        color: var(--green-900);
+      }
+
+      .hero-copy p {
+        margin: 0 0 20px;
+        font-size: 1.06rem;
+        color: var(--muted);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 18px;
+        border-radius: 999px;
+        font-weight: 700;
+        transition: 0.25s ease;
+      }
+
+      .btn-primary {
+        background: var(--green-700);
+        color: var(--white);
+        box-shadow: 0 12px 28px rgba(29, 107, 79, 0.22);
+      }
+
+      .btn-primary:hover {
+        background: var(--green-800);
+        transform: translateY(-2px);
+      }
+
+      .btn-secondary {
+        background: var(--white);
+        color: var(--green-900);
+        border: 1px solid rgba(11, 61, 46, 0.12);
+      }
+
+      .btn-secondary:hover {
+        background: #effaf3;
+      }
+
+      .highlight-card {
+        background: linear-gradient(180deg, #ffffff, #f4faf6);
+        border: 1px solid rgba(17, 91, 71, 0.08);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+        padding: 26px;
+      }
+
+      .highlight-card h3 {
+        margin-top: 0;
+        color: var(--green-900);
+        font-size: 1.2rem;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 18px;
+      }
+
+      .stat {
+        background: var(--cream);
+        border-radius: 18px;
+        padding: 16px 14px;
+      }
+
+      .stat strong {
+        display: block;
+        font-size: 1.5rem;
+        color: var(--green-800);
+      }
+
+      .stat span {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .section {
+        padding: 28px 0;
+      }
+
+      .section-heading {
+        text-align: center;
+        margin-bottom: 28px;
+      }
+
+      .section-heading h2 {
+        margin: 0 0 8px;
+        color: var(--green-900);
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+      }
+
+      .section-heading p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: var(--white);
+        border-radius: 22px;
+        padding: 24px;
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(17, 91, 71, 0.08);
+      }
+
+      .card h3 {
+        margin-top: 0;
+        color: var(--green-900);
+        font-size: 1.25rem;
+      }
+
+      .card p,
+      .card li {
+        color: var(--muted);
+      }
+
+      .card ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .time-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .time-item {
+        background: linear-gradient(135deg, #ffffff, #edf8f1);
+        border: 1px solid rgba(17, 91, 71, 0.08);
+        border-radius: 18px;
+        padding: 20px 18px;
+        box-shadow: 0 12px 24px rgba(17, 91, 71, 0.05);
+      }
+
+      .time-item .name {
+        font-size: 0.82rem;
+        display: inline-block;
+        margin-bottom: 6px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--green-700);
+      }
+
+      .time-item strong {
+        font-size: 1.6rem;
+        color: var(--green-900);
+      }
+
+      .location-wrap {
+        display: grid;
+        grid-template-columns: 0.9fr 1.3fr;
+        gap: 22px;
+        align-items: center;
+      }
+
+      .address-box {
+        background: var(--white);
+        border: 1px solid rgba(17, 91, 71, 0.08);
+        border-radius: 22px;
+        padding: 24px;
+        box-shadow: var(--shadow);
+      }
+
+      .address-box h3 {
+        margin-top: 0;
+        color: var(--green-900);
+      }
+
+      iframe {
+        width: 100%;
+        min-height: 360px;
+        border: 0;
+        border-radius: 22px;
+        box-shadow: var(--shadow);
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .contact-box {
+        background: linear-gradient(180deg, #123c2e, #0d3026);
+        color: var(--white);
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: var(--shadow);
+      }
+
+      .contact-box h3 {
+        margin-top: 0;
+        font-size: 1.3rem;
+      }
+
+      .contact-box p {
+        margin: 8px 0;
+        color: rgba(255,255,255,0.9);
+      }
+
+      .footer {
+        background: #0c1f1a;
+        color: rgba(255,255,255,0.84);
+        padding: 26px 0 36px;
+        text-align: center;
+        margin-top: 28px;
+      }
+
+      @media (max-width: 850px) {
+        .hero-grid,
+        .location-wrap,
+        .info-grid,
+        .contact-grid,
+        .time-grid {
+          grid-template-columns: 1fr;
         }
-        h1, h2 {
-            text-align: center;
+
+        .topbar-inner {
+          flex-direction: column;
+          align-items: flex-start;
         }
-        a {
-            display: block;
-            background: #008080;
-            color: white;
-            padding: 10px;
-            margin: 5px 0;
-            text-decoration: none;
-            border-radius: 6px;
-            text-align: center;
-            font-size: 1.2rem;
+      }
+
+      @media (max-width: 540px) {
+        .hero {
+          padding-top: 40px;
         }
-        a:hover {
-            background: #006666;
+
+        .nav {
+          width: 100%;
         }
+
+        .nav a {
+          flex: 1 1 calc(50% - 10px);
+          text-align: center;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+        }
+
+        .btn {
+          width: 100%;
+        }
+      }
     </style>
-</head>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          Mosque Abbas
+          <small>مسجد عباس</small>
+        </div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#prayers">Prayer Times</a>
+          <a href="#location">Location</a>
+          <a href="#contact">Contact</a>
+          <a href="quran.html">Quran Audio</a>
+          <a href="https://jamaat360.com/pakistan-1/gujrat-76/bhagwal-4147/mosque-abbas-bhagwal-12173" target="_blank" rel="noreferrer">Reference</a>
+        </nav>
+      </div>
+    </header>
 
-<body>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Bhagwal • Kharian • Gujrat</p>
+            <h1>Mosque Abbas <span style="color: #1d6b4f;">رضی اللہ تعالٰی عنہ</span></h1>
+            <p>
+              A peaceful center of worship, learning, and community life in Bhagwal,
+              serving families with prayer, unity, and spiritual guidance.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#prayers">View Prayer Times</a>
+              <a class="btn btn-secondary" href="#location">Find the Mosque</a>
+            </div>
+          </div>
 
-<h1>🌙 قرآن مجید مع اردو ترجمہ</h1>
-<h2>پارہ وار لنکس</h2>
+          <aside class="highlight-card" aria-label="Mosque summary">
+            <h3>Community Highlights</h3>
+            <div class="stats">
+              <div class="stat">
+                <strong>5</strong>
+                <span>Daily Prayers</span>
+              </div>
+              <div class="stat">
+                <strong>1</strong>
+                <span>Jumu'ah</span>
+              </div>
+              <div class="stat">
+                <strong>24/7</strong>
+                <span>Spiritual Support</span>
+              </div>
+              <div class="stat">
+                <strong>100%</strong>
+                <span>Community Care</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
 
-<p style="text-align:center">جس پارہ پر کلک کریں — وہ پارہ سنیں اور ترجمہ دیکھیں۔</p>
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About the Mosque</h2>
+            <p>Serving the local community with faith, dignity, and unity.</p>
+          </div>
 
-<a href="http://bit.ly/2qpLHGY">پارہ 1</a>
-<a href="http://bit.ly/2qnS2Ha">پارہ 2</a>
-<a href="http://bit.ly/2sbSqoq">پارہ 3</a>
-<a href="http://bit.ly/2r6TOeq">پارہ 4</a>
-<a href="http://bit.ly/2qzzsYk">پارہ 5</a>
-<a href="http://bit.ly/2qI4EE2">پارہ 6</a>
-<a href="http://bit.ly/2rW88HS">پارہ 7</a>
-<a href="http://bit.ly/2qK0aO4">پارہ 8</a>
-<a href="http://bit.ly/2rBqzB0">پارہ 9</a>
-<a href="http://bit.ly/2s3dkdd">پارہ 10</a>
-<a href="http://bit.ly/2so5po5">پارہ 11</a>
-<a href="http://bit.ly/2rzgVP9">پارہ 12</a>
-<a href="http://bit.ly/2rSIJ1l">پارہ 13</a>
-<a href="http://bit.ly/2sk5Lid">پارہ 14</a>
-<a href="http://bit.ly/2rKJHw3">پارہ 15</a>
-<a href="http://bit.ly/2sMTr7y">پارہ 16</a>
-<a href="http://bit.ly/2r9opp2">پارہ 17</a>
-<a href="http://bit.ly/2rpK4c8">پارہ 18</a>
-<a href="http://bit.ly/2rpq1iW">پارہ 19</a>
-<a href="http://bit.ly/2rAX4Mc">پارہ 20</a>
-<a href="http://bit.ly/2rBv2Aa">پارہ 21</a>
-<a href="http://bit.ly/2sbmkft">پارہ 22</a>
-<a href="http://bit.ly/2rtPXpH">پارہ 23</a>
-<a href="http://bit.ly/2sfUCOE">پارہ 24</a>
-<a href="http://bit.ly/2smfZxF">پارہ 25</a>
-<a href="http://bit.ly/2tLUEvC">پارہ 26</a>
-<a href="http://bit.ly/2tru5wz">پارہ 27</a>
-<a href="http://bit.ly/2rXeW98">پارہ 28</a>
-<a href="http://bit.ly/2s5NLEk">پارہ 29</a>
-<a href="http://bit.ly/2s1BBB4">پارہ 30</a>
+          <div class="info-grid">
+            <article class="card">
+              <h3>Our Mission</h3>
+              <p>
+                Mosque Abbas is dedicated to helping people strengthen their faith,
+                nurture Islamic values, and build a close-knit community based on
+                compassion and service.
+              </p>
+            </article>
 
-<p style="text-align:center; margin-top:30px;">
-    💌 صدقہ جاریہ سمجھ کر دوسروں تک بھی شئیر کریں  
-    <br>
-    📍 Bhagwal, Kharian, Gujrat, Punjab, Pakistan
-</p>
+            <article class="card">
+              <h3>Community Life</h3>
+              <p>
+                We support worshippers, families, and youth through daily prayers,
+                Islamic teachings, and acts of charity that bring people together.
+              </p>
+            </article>
 
-</body>
+            <article class="card">
+              <h3>Islamic Values</h3>
+              <ul>
+                <li>Prayer and remembrance</li>
+                <li>Knowledge and guidance</li>
+                <li>Unity and compassion</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="prayers" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Prayer Times</h2>
+            <p>Daily prayer schedule for the local community.</p>
+          </div>
+
+          <div class="time-grid">
+            <div class="time-item"><span class="name">Fajr</span><br /><strong>5:00 AM</strong></div>
+            <div class="time-item"><span class="name">Dhuhr</span><br /><strong>1:00 PM</strong></div>
+            <div class="time-item"><span class="name">Asr</span><br /><strong>4:30 PM</strong></div>
+            <div class="time-item"><span class="name">Maghrib</span><br /><strong>Sunset</strong></div>
+            <div class="time-item"><span class="name">Isha</span><br /><strong>8:00 PM</strong></div>
+            <div class="time-item"><span class="name">Jumu'ah</span><br /><strong>1:30 PM</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Location</h2>
+            <p>Find us in Bhagwal, Kharian, Gujrat, Punjab.</p>
+          </div>
+
+          <div class="location-wrap">
+            <div class="address-box">
+              <h3>Address</h3>
+              <p>Golra Hashim Road, Bhagwal, Kharian Tehsil, Gujrat District, Punjab, Pakistan</p>
+              <p><strong>Contact Person:</strong> Malik Amaan Ullah</p>
+              <p><strong>Mobile No:</strong> +92 315 4261140</p>
+            </div>
+
+            <iframe
+              title="Mosque Abbas location"
+              src="https://www.google.com/maps?q=32.824812,73.953311&z=15&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact & Support</h2>
+            <p>We welcome all visitors and community members.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-box">
+              <h3>Get in Touch</h3>
+              <p>Malik Amaan Ullah</p>
+              <p>+92 315 4261140</p>
+              <p>Bhagwal, Kharian, Gujrat, Punjab</p>
+            </div>
+
+            <div class="contact-box">
+              <h3>Quick Links</h3>
+              <p><a href="quran.html">Complete Quran Audio</a></p>
+              <p><a href="https://jamaat360.com/pakistan-1/gujrat-76/bhagwal-4147/mosque-abbas-bhagwal-12173" target="_blank" rel="noreferrer">Reference Listing</a></p>
+              <p><a href="#about">About the Mosque</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Mosque Abbas رضی اللہ تعالٰی عنہ | Bhagwal, Kharian, Gujrat, Punjab, Pakistan</p>
+      </div>
+    </footer>
+  </body>
 </html>
-
-  
-  <footer>
-    <p>&copy; 2025 Mosque Abbas رضی اللہ تعالٰی عنہ بھگوال | Golra Hashim Road, Bhagwal, Kharian Tehsil, Gujrat District, Punjab, Pakistan</p>
-    <p>All Rights Reserved. Unauthorized reproduction or use of content is prohibited.</p>
-  </footer>
-</body>
-</html>
-
